@@ -1,19 +1,29 @@
-import Phaser from 'phaser'
+import Phaser from 'phaser';
 
-import HelloWorldScene from './HelloWorldScene'
+const gameWidth = 800;
+const gameHeight = 600;
 
-const config: Phaser.Types.Core.GameConfig = {
+const sharedConfig = {
+	width: gameWidth,
+	height: gameHeight,
+
+	playerStartPosition: {
+		x: gameWidth / 2, // 800 / 2 = 400 pixels
+		y: gameHeight / 2, // 600 / 2 = 300 pixels
+	},
+};
+
+const config = {
 	type: Phaser.AUTO,
 	parent: 'app',
-	width: 800,
-	height: 600,
 	physics: {
 		default: 'arcade',
 		arcade: {
-			gravity: { y: 200 },
+			debug: true,
 		},
 	},
-	scene: [HelloWorldScene],
-}
+	...sharedConfig,
+	scene: [new GameScene(sharedConfig)],
+};
 
-export default new Phaser.Game(config)
+new Phaser.Game(config);
