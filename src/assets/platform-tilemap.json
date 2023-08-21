@@ -1,0 +1,44 @@
+{
+	"compressionlevel": -1,
+	"height": 1,
+	"infinite": false,
+	"layers": [
+		{
+			"data": [1, 1, 1, 1, 1],
+			"height": 1,
+			"id": 1,
+			"name": "Tile Layer 1",
+			"opacity": 1,
+			"type": "tilelayer",
+			"visible": true,
+			"width": 5,
+			"x": 0,
+			"y": 0
+		}
+	],
+	"nextlayerid": 2,
+	"nextobjectid": 1,
+	"orientation": "orthogonal",
+	"renderorder": "right-down",
+	"tiledversion": "1.10.2",
+	"tileheight": 16,
+	"tilesets": [
+		{
+			"columns": 1,
+			"firstgid": 1,
+			"image": "./platform-tile.png",
+			"imageheight": 16,
+			"imagewidth": 16,
+			"margin": 0,
+			"name": "platform-tile",
+			"spacing": 0,
+			"tilecount": 1,
+			"tileheight": 16,
+			"tilewidth": 16
+		}
+	],
+	"tilewidth": 16,
+	"type": "map",
+	"version": "1.10",
+	"width": 5
+}
