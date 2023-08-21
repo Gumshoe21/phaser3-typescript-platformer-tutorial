@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import GameScene from './scenes/GameScene';
 
 const gameWidth = 800;
 const gameHeight = 600;
@@ -19,7 +20,7 @@ const config = {
 	physics: {
 		default: 'arcade',
 		arcade: {
-			debug: true,
+			debug: false,
 		},
 	},
 	...sharedConfig,
